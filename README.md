@@ -26,6 +26,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Project Walkthrough</h2>
 
 <p>
+![1](https://github.com/user-attachments/assets/b6865b12-2d73-439b-8b64-c6d82e900b81)
+
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
