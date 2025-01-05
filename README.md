@@ -68,9 +68,47 @@ Once Wireshark has downloaded and opened, I will select "Ethernet" to observe ne
 
 ![image](https://github.com/user-attachments/assets/d7276878-5810-4fb9-b969-8946bf97b240)
 
-To filter for ICMP (Internet Control Message Protocol) traffic I type "ICMP" at the top of wireshark. To make traffic I will get the private IP address of VM2 and ping it from PowerShell:
+To filter for ICMP (Internet Control Message Protocol) traffic, I type "ICMP" at the top of Wireshark. To make traffic, I will get the private IP address of VM2 and ping it from PowerShell:
 
 ![image](https://github.com/user-attachments/assets/c6677972-3982-4d24-9c01-28c174884bc6)
 
 ![image](https://github.com/user-attachments/assets/c2ea76fb-f8a0-4254-ad06-7221af0036a4)
+
+Now, we can make some firewall configurations to deny any ICMP traffic. To do this I will enter a perpetual ping command into PowerShell:
+
+![image](https://github.com/user-attachments/assets/2cad2db6-97a1-437d-ad14-1d263021aaed)
+
+Next, I will go to VM2's network security group and create a new inbound security rule denying all ICMP traffic making sure to put its priorty highest, so it will take precedence before all other rules:
+
+![image](https://github.com/user-attachments/assets/38972ac3-6df0-4a4e-b7f1-9b9ce2ea3046)
+
+![image](https://github.com/user-attachments/assets/ccc96f6a-f912-4078-a1b5-d40129c38816)
+
+To revert the change I can either switch the inbound rule to "Allow" instead of "Deny" or delete the rule:
+
+![image](https://github.com/user-attachments/assets/8fa4793d-21b6-4bca-a01f-fe357c1958f1)
+
+Now ICMP echo requests are back to getting responses:
+
+![image](https://github.com/user-attachments/assets/da41053b-3b21-4855-b426-efb0e541d91a)
+
+Now I will filter to only show SSH (Secure Shell) traffic by typing SSH into the bar at the top and I will SSH into VM2 using PowerShell:
+
+![image](https://github.com/user-attachments/assets/4e4fd25e-61b4-419d-bd64-e4275e44da65)
+
+I can type commands like pwd (print working directory) and observe the traffic:
+
+![image](https://github.com/user-attachments/assets/45a399fd-e67d-4235-b29a-217268e247c5)
+
+After filtering for DHCP (Dynamic Host Configuration Protocol) traffic, I attempted to get a new IP address by using the ipconfig /renew command:
+
+![image](https://github.com/user-attachments/assets/2281878d-aac8-41c4-9fc7-5206fc809d85)
+
+Filtering for DNS (Domain Name System) traffic, I can use nslookup to find IP addresses for domain names like "google.com" and "disney.com":
+
+![image](https://github.com/user-attachments/assets/7292e479-792b-4220-9a3c-4c562e56533f)
+
+Finally, I'll observe RDP (Remote Desktop Protocol) traffic by typing in "tcp.port == 3389" in the top bar. You'll notice there is traffic happening without us doing anything. This is because I used RDP to connect to this machine from my own computer and RDP shows us a constant live stream of whats happening:
+
+![image](https://github.com/user-attachments/assets/7d0aadb8-7486-4587-914c-277975cbf559)
 
