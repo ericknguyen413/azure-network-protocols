@@ -29,27 +29,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Navigate to Microsoft Azure and create a resource group: 
 
 ![image](https://github.com/user-attachments/assets/7675e6e3-e373-4a6d-8732-7eba2ab59974)
-</p>
-<br />
-
-<p>
 
 Once my resource group is created, next I'll create the first virtual machine:
   
 ![image](https://github.com/user-attachments/assets/5d7b59d0-71fc-4ffc-9462-5317ba919b83)
-</p>
-<p>
-
-</p>
-<br />
 
 Virtual Machine has been created:
-
-<p>
   
 ![image](https://github.com/user-attachments/assets/93b692f0-f76d-4f22-95d2-67b9488b0280)
-
-</p>
 
 Now Azure has set up a VM, an IP for the VM, a network security group, a virtual network, a disk, and a NIC (Network Interface Card):
 
@@ -58,4 +45,32 @@ Now Azure has set up a VM, an IP for the VM, a network security group, a virtual
 Creating my second virtual machine:
 
 ![image](https://github.com/user-attachments/assets/3894afec-5841-4ba8-8a76-c30868811ec8)
+
+The second virtual machine completed:
+
+![image](https://github.com/user-attachments/assets/9ba69bea-10d6-4add-bdb1-a527140aa38e)
+
+In the "Virtual Machines" tab, I want to ensure both VMs will be on the same virtual network as the first one I made:
+
+![image](https://github.com/user-attachments/assets/4eef2d99-9ad8-4dfe-893e-420e66dcb56a)
+
+![image](https://github.com/user-attachments/assets/4a095a12-b9c5-46b3-8865-6694004fe6a9)
+
+Now let's use RDP to connect to Windows Virtual Machine #1
+
+![image](https://github.com/user-attachments/assets/5cd5841e-d815-4d7d-86e9-13b007e97844)
+
+Once I have connected to the VM1, I will now download Wireshark onto the VM
+
+![image](https://github.com/user-attachments/assets/51fb1b09-7caf-4f9a-ab40-9689345193d0)
+
+Once Wireshark has downloaded and opened, I will select "Ethernet" to observe network traffic:
+
+![image](https://github.com/user-attachments/assets/d7276878-5810-4fb9-b969-8946bf97b240)
+
+To filter for ICMP (Internet Control Message Protocol) traffic I type "ICMP" at the top of wireshark. To make traffic I will get the private IP address of VM2 and ping it from PowerShell:
+
+![image](https://github.com/user-attachments/assets/c6677972-3982-4d24-9c01-28c174884bc6)
+
+![image](https://github.com/user-attachments/assets/c2ea76fb-f8a0-4254-ad06-7221af0036a4)
 
