@@ -92,7 +92,7 @@ Now ICMP echo requests are back to getting responses:
 
 ![image](https://github.com/user-attachments/assets/da41053b-3b21-4855-b426-efb0e541d91a)
 
-Now, I will filter to only show SSH (Secure Shell) traffic by typing SSH into the bar at the top, and I will SSH into VM2 using PowerShell:
+Now, I will filter to only show SSH (Secure Shell) traffic by typing SSH into the search bar at the top, and I will SSH into VM2 using PowerShell:
 
 ![image](https://github.com/user-attachments/assets/4e4fd25e-61b4-419d-bd64-e4275e44da65)
 
@@ -100,7 +100,7 @@ I can type commands like pwd (print working directory) and observe the traffic:
 
 ![image](https://github.com/user-attachments/assets/45a399fd-e67d-4235-b29a-217268e247c5)
 
-After filtering for DHCP (Dynamic Host Configuration Protocol) traffic, I attempted to get a new IP address by using the ipconfig /renew command in shell:
+After filtering for DHCP (Dynamic Host Configuration Protocol) traffic, I attempted to get a new IP address by using the ipconfig /renew command in PowerShell:
 
 ![image](https://github.com/user-attachments/assets/2281878d-aac8-41c4-9fc7-5206fc809d85)
 
