@@ -39,14 +39,23 @@ Once my resource group is created, next I'll create the first virtual machine:
 ![image](https://github.com/user-attachments/assets/5d7b59d0-71fc-4ffc-9462-5317ba919b83)
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <br />
 
+Virtual Machine has been created:
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![image](https://github.com/user-attachments/assets/93b692f0-f76d-4f22-95d2-67b9488b0280)
+
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+
+Now Azure has set up a VM, an IP for the VM, a network security group, a virtual network, a disk, and a NIC (Network Interface Card):
+
+![image](https://github.com/user-attachments/assets/66e5ee39-11a5-4541-911e-61f8ae275112)
+
+Creating my second virtual machine:
+
+![image](https://github.com/user-attachments/assets/3894afec-5841-4ba8-8a76-c30868811ec8)
+
