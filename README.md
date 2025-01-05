@@ -5,7 +5,6 @@
 <h1>Monitoring Network Traffic with Azure VMs</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
-
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
@@ -26,17 +25,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Project Walkthrough</h2>
 
 <p>
-![1](https://github.com/user-attachments/assets/b6865b12-2d73-439b-8b64-c6d82e900b81)
+  
+Navigate to Microsoft Azure and create a resource group: 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+![image](https://github.com/user-attachments/assets/7675e6e3-e373-4a6d-8732-7eba2ab59974)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Once my resource group is created, next I'll create the first virtual machine:
+  
+![image](https://github.com/user-attachments/assets/5d7b59d0-71fc-4ffc-9462-5317ba919b83)
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
